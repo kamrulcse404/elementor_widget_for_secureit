@@ -1,0 +1,58 @@
+
+/* COPILOT AUTHOR LINK */
+.author-link, a.author-link {
+	color: inherit !important;
+	text-decoration: none;
+	/*margin-left: 40%;*/
+}
+a.author-link:hover {
+	color: #4D7FFF !important;
+	text-decoration: underline;
+	/*animation: text-glow 2s infinite alternate ease-in-out;
+	text-shadow: -1px 1px #156dcd, 1px -1px 0 #4D7FFF, 0 0 9px rgba(255,255,255,1);*/
+}
+
+@keyframes bg-glitch {
+  0% {
+    background-position: 0 2px;
+  }
+  2% {
+    background-color: #1e2025;
+  }
+  18% {
+    background-position: 0 2px;
+  }
+  79% {
+    background-position: 0 1px;
+  }
+  100% {
+    background-position: 0 3px;
+    background-color: lighten(#1e2025, 2%);
+  }
+}
+
+@keyframes text-glow {
+  66%{
+    text-shadow: -1px 1px #2a54da, 
+		1px -1px 0 #4D7FFF, 
+		0 0 9px rgba(255,255,255,1);
+  }
+  68% {
+    text-shadow: -2px 2px 0 #4D7FFF,
+    2px -2px 0 #4D7FFF,
+    0 0 9px rgba(255,255,255,1);
+  }
+  70% {
+    opacity: 1;
+    text-shadow: -1px 1px #173c9b, 
+		1px -1px 0 #4D7FFF, 
+		0 0 9px rgba(255,255,255,0.4);
+  }
+  71%{
+    opacity: 1;
+  }  100% {
+    text-shadow: -1px 1px 0 #4D7FFF,
+    1px -1px 0 #4D7FFF,
+    0 0 14px rgba(255,255,255,1);
+  }
+}

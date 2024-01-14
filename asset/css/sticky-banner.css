@@ -1,0 +1,32 @@
+
+/* banner */
+.banner {
+  position: sticky;
+  top: 0;
+  padding: 2rem 0;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  background-color: #8c1007;
+  background-repeat: repeat;
+  background-image: url(../imgs/bgs/red-texture.jpg) !important;
+}
+.banner a {
+  font-weight: bold;
+}
+
+.banner__cross {
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  cursor: pointer;
+}
+
+.banner img {
+	left: 1rem;
+	top: 50%;
+	transform: translateY(-70%);
+	position: absolute;
+}
+
