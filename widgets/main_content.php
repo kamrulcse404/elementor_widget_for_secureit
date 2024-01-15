@@ -222,7 +222,7 @@ class Main_Content extends \Elementor\Widget_Base
 
 
                                 <div class="job-listing">
-                                    <div class="job-card">
+                                    <div class="job-card-kh">
                                         <div class="job-image">
                                             <img src="<?php echo esc_url($item['job_image']['url']); ?>" alt="<?php echo esc_attr($item['job_title']); ?>">
                                         </div>
@@ -232,8 +232,8 @@ class Main_Content extends \Elementor\Widget_Base
                                         </div>
                                         <div class="job-location"><?php echo esc_html($item['job_location']); ?></div>
                                         <div class="job-buttons">
-                                            <a href="mailto:<?php echo esc_url($sourceit_main_section_apply_email); ?>" class="apply-button"><?php echo esc_html($item['job_apply_button_text']); ?></a>
-                                            <button class="learn-more-button my-model"><?php echo esc_html($item['job_read_button_text']); ?></button>
+                                            <a href="mailto:<?php echo esc_url($sourceit_main_section_apply_email); ?>" class="apply-button-kh"><?php echo esc_html($item['job_apply_button_text']); ?></a>
+                                            <button class="learn-more-button-kh my-model-kh"><?php echo esc_html($item['job_read_button_text']); ?></button>
                                         </div>
                                         <div class="job-full-desc" style="display: none;">
                                             <?php echo $item['job_full_description']; ?>
@@ -241,13 +241,13 @@ class Main_Content extends \Elementor\Widget_Base
                                     </div>
                                 </div>
 
-                                <div class="custom-model-main">
+                                <div class="custom-model-main-kh">
                                     <div class="custom-model-inner">
                                         <div class="close-btn">×</div>
                                         <div class="custom-model-wrap">
                                             <div class="pop-up-content-wrap">
 
-                                                <div class="job-card">
+                                                <div class="job-card-kh">
                                                     <div class="job-image">
                                                         <img src="" alt="">
                                                     </div>
@@ -261,12 +261,12 @@ class Main_Content extends \Elementor\Widget_Base
                                                     </div>
                                                     <div class="job-location"></div>
                                                     <div class="job-buttons modal-job-buttons">
-                                                        <a href="mailto:<?php echo esc_url($sourceit_main_section_apply_email); ?>" class="apply-button">Apply Now</a>
+                                                        <a href="mailto:<?php echo esc_url($sourceit_main_section_apply_email); ?>" class="apply-button-kh">Apply Now</a>
 
                                                     </div>
 
                                                     <div class="job-full-desc">
-                                                        
+
                                                     </div>
                                                 </div>
 
@@ -281,50 +281,10 @@ class Main_Content extends \Elementor\Widget_Base
 
                             </div>
 
-
-
-
-
-
-
-
-
                     <?php
                         }
                     }
                     ?>
-
-
-
-                    <!-- <div class="col-md-6">
-
-                        <div class="job-listing">
-                            <div class="job-card">
-                                <div class="job-image">
-                                    <img src="<?php echo get_template_directory_uri() ?>/imgs/icons/dishwasher.png" alt="Dishwasher">
-
-                                </div>
-                                <div class="job-details">
-                                    <div class="job-title">Dishwasher</div>
-                                    <div class="job-salary">$17 / hour</div>
-                                </div>
-
-                                <div class="job-location">Oahu's Windward side</div>
-
-                                <div class="job-buttons">
-                                    <button class="apply-button">Apply Now</button>
-                                    <button class="learn-more-button">Learn More</button>
-                                </div>
-                            </div>
-                        </div>
-
-                    
-                    </div> -->
-
-
-
-
-
 
                 </div>
             </div>

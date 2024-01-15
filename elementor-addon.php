@@ -125,7 +125,7 @@ function add_code_to_footer()
 
 
   <style>
-    .custom-model-main {
+    .custom-model-main-kh {
       text-align: center;
       overflow: hidden;
       position: fixed;
@@ -145,7 +145,7 @@ function add_code_to_footer()
       overflow-y: auto;
     }
 
-    .model-open {
+    .model-open-kh {
       z-index: 99999;
       opacity: 1;
       overflow: hidden;
@@ -189,7 +189,7 @@ function add_code_to_footer()
       overflow-y: auto;
     }
 
-    .model-open .custom-model-inner {
+    .model-open-kh .custom-model-inner {
       -webkit-transform: translate(0, 0);
       -ms-transform: translate(0, 0);
       transform: translate(0, 0);
@@ -197,13 +197,14 @@ function add_code_to_footer()
       z-index: 999;
     }
 
-    .model-open .bg-overlay {
+    .model-open-kh .bg-overlay {
       background: rgba(0, 0, 0, 0.6);
       z-index: 99;
     }
 
     .bg-overlay {
-      background: rgba(0, 0, 0, 0);
+      /* background: rgba(0, 0, 0, 0); */
+      background: rgba(255,255,255,0);
       height: 100vh;
       width: 100%;
       position: fixed;
@@ -231,7 +232,7 @@ function add_code_to_footer()
 
 
     @media screen and (min-width:800px) {
-      .custom-model-main:before {
+      .custom-model-main-kh:before {
         content: "";
         display: inline-block;
         height: auto;
@@ -305,8 +306,8 @@ function add_code_to_footer()
 
     }
 
-    .apply-button,
-    .learn-more-button {
+    .apply-button-kh,
+    .learn-more-button-kh {
       background-color: #11c12e;
       color: white;
       border-radius: 24px;
@@ -316,20 +317,20 @@ function add_code_to_footer()
       font-weight: bold;
     }
 
-    .apply-button {
+    .apply-button-kh {
       margin-right: 10px;
     }
 
-    .learn-more-button {
+    .learn-more-button-kh {
       margin-left: 10px;
     }
 
-    a.apply-button {
+    a.apply-button-kh {
       text-align: center;
     }
 
 
-    a.apply-button:hover {
+    a.apply-button-kh:hover {
       color: white !important;
     }
 
@@ -341,32 +342,32 @@ function add_code_to_footer()
   <script>
     jQuery(document).ready(function($) {
       // alert('jeeee');
-      $(".my-model").on('click', function() {
+      $(".my-model-kh").on('click', function() {
 
 
         // Get the clicked job data
-        var jobTitle = $(this).closest('.job-card').find('.job-title').text();
-        var jobSalary = $(this).closest('.job-card').find('.job-salary').text();
-        var jobLocation = $(this).closest('.job-card').find('.job-location').text();
-        var jobImageSrc = $(this).closest('.job-card').find('.job-image img').attr('src');
+        var jobTitle = $(this).closest('.job-card-kh').find('.job-title').text();
+        var jobSalary = $(this).closest('.job-card-kh').find('.job-salary').text();
+        var jobLocation = $(this).closest('.job-card-kh').find('.job-location').text();
+        var jobImageSrc = $(this).closest('.job-card-kh').find('.job-image img').attr('src');
 
-        var jobFullDesc = $(this).closest('.job-card').find('.job-full-desc').html(); // Change text() to html()
+        var jobFullDesc = $(this).closest('.job-card-kh').find('.job-full-desc').html(); // Change text() to html()
 
         // Populate the modal with dynamic data
-        $(".custom-model-main .job-title").text(jobTitle);
-        $(".custom-model-main .job-salary").text(jobSalary);
-        $(".custom-model-main .job-location").text(jobLocation);
-        $(".custom-model-main .job-image img").attr('src', jobImageSrc);
+        $(".custom-model-main-kh .job-title").text(jobTitle);
+        $(".custom-model-main-kh .job-salary").text(jobSalary);
+        $(".custom-model-main-kh .job-location").text(jobLocation);
+        $(".custom-model-main-kh .job-image img").attr('src', jobImageSrc);
 
-        $(".custom-model-main .job-full-desc").html(jobFullDesc); // Change text() to html()
-
-
+        $(".custom-model-main-kh .job-full-desc").html(jobFullDesc); // Change text() to html()
 
 
-        $(".custom-model-main").addClass('model-open');
+
+
+        $(".custom-model-main-kh").addClass('model-open-kh');
       });
       $(".close-btn, .bg-overlay").click(function() {
-        $(".custom-model-main").removeClass('model-open');
+        $(".custom-model-main-kh").removeClass('model-open-kh');
       });
     });
   </script>
