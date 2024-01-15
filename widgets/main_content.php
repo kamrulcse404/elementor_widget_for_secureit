@@ -144,7 +144,7 @@ class Main_Content extends \Elementor\Widget_Base
                         'name' => 'job_full_description',
                         'label' => esc_html__('Job Full Description', 'sourceit'),
                         'type' => \Elementor\Controls_Manager::WYSIWYG,
-                        'default' => esc_html__('Job description', 'sourceit'),
+                        'default' => esc_html__('Overview', 'sourceit'),
                         'placeholder' => esc_html__('Type job full description here', 'sourceit'),
                     ],
 
@@ -235,6 +235,9 @@ class Main_Content extends \Elementor\Widget_Base
                                             <a href="mailto:<?php echo esc_url($sourceit_main_section_apply_email); ?>" class="apply-button"><?php echo esc_html($item['job_apply_button_text']); ?></a>
                                             <button class="learn-more-button my-model"><?php echo esc_html($item['job_read_button_text']); ?></button>
                                         </div>
+                                        <div class="job-full-desc" style="display: none;">
+                                            <?php echo $item['job_full_description']; ?>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -257,9 +260,13 @@ class Main_Content extends \Elementor\Widget_Base
                                                         </div>
                                                     </div>
                                                     <div class="job-location"></div>
-                                                    <div class="job-buttons">
+                                                    <div class="job-buttons modal-job-buttons">
                                                         <a href="mailto:<?php echo esc_url($sourceit_main_section_apply_email); ?>" class="apply-button">Apply Now</a>
 
+                                                    </div>
+
+                                                    <div class="job-full-desc">
+                                                        
                                                     </div>
                                                 </div>
 

@@ -220,12 +220,15 @@ function add_code_to_footer()
     .close-btn {
       position: absolute;
       right: 0;
-      top: -30px;
+      top: 0;
+
       cursor: pointer;
       z-index: 99;
       font-size: 30px;
-      color: #fff;
+      color: #32363b;
     }
+
+
 
     @media screen and (min-width:800px) {
       .custom-model-main:before {
@@ -308,7 +311,7 @@ function add_code_to_footer()
       color: white;
       border-radius: 24px;
       border-color: rgba(255, 255, 255, 0);
-      width: 70%;
+      width: 100%;
       font-size: 15px;
       font-weight: bold;
     }
@@ -329,6 +332,10 @@ function add_code_to_footer()
     a.apply-button:hover {
       color: white !important;
     }
+
+    .job-full-desc {
+      margin-top: 10px;
+    }
   </style>
 
   <script>
@@ -343,11 +350,15 @@ function add_code_to_footer()
         var jobLocation = $(this).closest('.job-card').find('.job-location').text();
         var jobImageSrc = $(this).closest('.job-card').find('.job-image img').attr('src');
 
+        var jobFullDesc = $(this).closest('.job-card').find('.job-full-desc').html(); // Change text() to html()
+
         // Populate the modal with dynamic data
         $(".custom-model-main .job-title").text(jobTitle);
         $(".custom-model-main .job-salary").text(jobSalary);
         $(".custom-model-main .job-location").text(jobLocation);
         $(".custom-model-main .job-image img").attr('src', jobImageSrc);
+
+        $(".custom-model-main .job-full-desc").html(jobFullDesc); // Change text() to html()
 
 
 
