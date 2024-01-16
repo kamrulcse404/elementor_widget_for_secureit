@@ -170,14 +170,19 @@ function add_code_to_footer()
 
     .custom-model-wrap {
       display: block;
-      width: 100%;
+      /* width: 100%; */
+      width: 80%;
+      margin-left: 44px;
       position: relative;
       background-color: #fff;
       border: 1px solid #999;
-      border: 1px solid rgba(0, 0, 0, 0.2);
+      /* border: 1px solid rgba(0, 0, 0, 0.2); */
+      border: 1px solid transparent !important;
       border-radius: 6px;
-      -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-      box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+      /* -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5); */
+      -webkit-box-shadow: 0 3px 9px transparent !important;
+      /* box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5); */
+      box-shadow: 0 3px 9px transparent !important;
       background-clip: padding-box;
       outline: 0;
       text-align: left;
@@ -189,6 +194,7 @@ function add_code_to_footer()
       overflow-y: auto;
     }
 
+
     .model-open-kh .custom-model-inner {
       -webkit-transform: translate(0, 0);
       -ms-transform: translate(0, 0);
@@ -197,14 +203,17 @@ function add_code_to_footer()
       z-index: 999;
     }
 
+
     .model-open-kh .bg-overlay {
-      background: rgba(0, 0, 0, 0.6);
+      background: transparent !important;
+      /* background: #7B7F85 !important; */
       z-index: 99;
     }
 
     .bg-overlay {
-      /* background: rgba(0, 0, 0, 0); */
-      background: rgba(255, 255, 255, 0);
+      /* background: rgba(255, 255, 255, 0); */
+      background: transparent !important;
+      
       height: 100vh;
       width: 100%;
       position: fixed;
@@ -273,11 +282,12 @@ function add_code_to_footer()
       /* margin-bottom: 20px; */
     }
 
-
     .job-image img {
       display: inline-block;
       width: 100%;
-      height: 350px !important;
+      height: 380px !important;
+      height: 100% !important;
+      object-fit: contain;
     }
 
 
@@ -293,7 +303,7 @@ function add_code_to_footer()
 
     .job-title,
     .job-salary {
-      font-size: 16px;
+      font-size: 20px;
       font-weight: bold;
       line-height: 22px;
       color: rgb(17, 17, 17);
@@ -361,8 +371,14 @@ function add_code_to_footer()
         align-items: center;
       }
 
-      .job-image img {
+      /* .job-image img {
         height: 180px !important;
+      } */
+
+      .job-image img {
+        height: 100% !important;
+        width: 100% !important;
+        object-fit: contain;
       }
 
       .job-details {
@@ -396,6 +412,10 @@ function add_code_to_footer()
 
       .apply-button-kh {
         margin-right: 1px;
+      }
+
+      .learn-more-button-kh.my-model-kh {
+        padding: 3px !important;
       }
 
     }
