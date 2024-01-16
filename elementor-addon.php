@@ -204,7 +204,7 @@ function add_code_to_footer()
 
     .bg-overlay {
       /* background: rgba(0, 0, 0, 0); */
-      background: rgba(255,255,255,0);
+      background: rgba(255, 255, 255, 0);
       height: 100vh;
       width: 100%;
       position: fixed;
@@ -336,6 +336,68 @@ function add_code_to_footer()
 
     .job-full-desc {
       margin-top: 10px;
+    }
+
+    .learn-more-button-kh:hover {
+      background-color: #11c12e !important;
+    }
+
+    .apply-button-kh {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    @media (max-width: 767px) {
+
+      .km-col {
+        width: 50%;
+      }
+
+      .job-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .job-image img {
+        height: 180px !important;
+      }
+
+      .job-details {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .job-title,
+      .job-salary {
+        font-size: 15px;
+        line-height: 18px;
+      }
+
+      a.apply-button-kh {
+        margin-bottom: 10px;
+      }
+
+      .job-listing {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+
+      .learn-more-button-kh {
+        margin-left: 0px;
+      }
+
+      .main-content {
+        width: 95%;
+      }
+
+      .apply-button-kh {
+        margin-right: 1px;
+      }
+
     }
   </style>
 

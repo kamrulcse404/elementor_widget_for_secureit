@@ -161,7 +161,7 @@ class Main_Content extends \Elementor\Widget_Base
                         'name' => 'job_read_button_text',
                         'label' => esc_html__('Read Button Text', 'sourceit'),
                         'type' => \Elementor\Controls_Manager::TEXT,
-                        'default' => esc_html__('Read Now', 'sourceit'),
+                        'default' => esc_html__('Learn More', 'sourceit'),
                         'label_block' => true,
                     ],
 
@@ -211,14 +211,14 @@ class Main_Content extends \Elementor\Widget_Base
         <!-- main content  -->
         <section class="team-one thm-gray-bg smaller-padding" style="background:url(<?php echo esc_url($sourceit_main_section_background_img); ?>) repeat">
             <div class="container main-content">
-                <div class="row ">
+                <div class="row kh-row">
 
                     <?php
                     if (!empty($main_section_content_lists)) {
                         foreach ($main_section_content_lists as $item) {
                     ?>
 
-                            <div class="col-md-6">
+                            <div class="col-md-6 km-col">
 
 
                                 <div class="job-listing">
@@ -232,7 +232,7 @@ class Main_Content extends \Elementor\Widget_Base
                                         </div>
                                         <div class="job-location"><?php echo esc_html($item['job_location']); ?></div>
                                         <div class="job-buttons">
-                                            <a href="mailto:<?php echo esc_url($sourceit_main_section_apply_email); ?>" class="apply-button-kh"><?php echo esc_html($item['job_apply_button_text']); ?></a>
+                                            <a href="mailto:<?php echo esc_url($sourceit_main_section_apply_email); ?>" class="apply-button-kh btn"><?php echo esc_html($item['job_apply_button_text']); ?></a>
                                             <button class="learn-more-button-kh my-model-kh"><?php echo esc_html($item['job_read_button_text']); ?></button>
                                         </div>
                                         <div class="job-full-desc" style="display: none;">
